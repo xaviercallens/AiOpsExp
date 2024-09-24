@@ -193,13 +193,13 @@ class DeploymentObject:
     
 
 def reset_consumer_group():
-    reset_consumer_group_file_path = "C:\\Users\\ftouomoumanyongha\\reset_consumer_group_offset.bat"
+    reset_consumer_group_file_path = "C:\\path\\to\\reset_consumer_group_offset.bat"
     subprocess.Popen(['cmd', '/c', 'start','/b', reset_consumer_group_file_path], shell=True)
     time.sleep(3)
     
     
 def del_and_recreate_topics():
-    delete_and_recreate_file_path = "C:\\Users\\ftouomoumanyongha\\recreate_kafka_topic.bat"
+    delete_and_recreate_file_path = "C:\\path\\to\\recreate_kafka_topic.bat"
     subprocess.Popen(['cmd', '/c', 'start','/b', delete_and_recreate_file_path], shell=True)
     time.sleep(3)
     
